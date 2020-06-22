@@ -1,0 +1,9 @@
+{
+  "settings":{
+    "title": "Account settings",
+    "intro": "Fill out your personal Jumbo account information which will be used to read your data.",
+    "username": "Username",
+    "password": "Password",
+    "save": "Save changes"
+  }
+}

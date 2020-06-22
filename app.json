@@ -1,0 +1,49 @@
+{
+  "id": "nl.yiggle.jumbo",
+  "version": "1.0.0",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name": {
+    "en": "Jumbo Supermarket",
+    "nl": "Jumbo Supermarkt"
+  },
+  "description": {
+    "en": "Order products at the Jumbo"
+  },
+  "category": [
+    "internet"
+  ],
+  "permissions": [
+    "homey:manager:speech-output"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Michel Falke",
+    "email": "michel@yiggle.nl"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "delivery_status",
+        "title": {
+          "en": "Delivery status updated",
+          "nl": "Bezorgstatus gewijzigd"
+        },
+        "tokens": [
+          {
+            "name": "delivery_status",
+            "type": "string",
+            "title": {
+              "en": "delivery",
+              "nl": "bezorging"
+            },
+            "example": "Morgen tussen 12:00 en 14:00"
+          }
+        ]
+      }
+    ]
+  }
+}

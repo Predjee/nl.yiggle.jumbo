@@ -1,0 +1,9 @@
+{
+  "settings":{
+    "title": "Account gegevens",
+    "intro": "Vul je persoonlijke account in, zodat we de gegevens uit kunnen lezen.",
+    "username": "Gebruikersnaam",
+    "password": "Wachtwoord",
+    "save": "Wijzigingen opslaan"
+  }
+}
