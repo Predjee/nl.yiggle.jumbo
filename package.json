@@ -2,9 +2,6 @@
   "name": "nl.yiggle.jumbo",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {
-    "homey": "^2.3.5"
-  },
   "dependencies": {
     "axios": "^0.19.2",
     "node-cache": "^5.1.1",
