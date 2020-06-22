@@ -13,3 +13,5 @@ Todo:
 - Generate list of products
 - Option to add articles to your shoppingcart
 - Option to order your shoppingcart
+- Fix translations on a normal way
+- KISSify the code
