@@ -5,5 +5,9 @@
     "username": "Gebruikersnaam",
     "password": "Wachtwoord",
     "save": "Wijzigingen opslaan"
+  },
+  "no-timeslots": {
+    "title": "Instellingen voor geen beschikbaarheid",
+    "message": "Tag waarde indien er geen beschikbaarheid is."
   }
 }

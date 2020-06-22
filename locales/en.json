@@ -5,5 +5,9 @@
     "username": "Username",
     "password": "Password",
     "save": "Save changes"
+  },
+  "no-timeslots": {
+    "title": "No available timeslots settings",
+    "message": "Tag content if no timeslots available"
   }
 }

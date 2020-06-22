@@ -22,6 +22,16 @@
 
 </fieldset>
 
+<fieldset>
+    <legend data-i18n="no-timeslots.title"></legend>
+
+    <div class="field row">
+        <label for="no-timeslots" data-i18n="no-timeslots.message"></label>
+        <input id="no-timeslots" type="text" value=""/>
+    </div>
+
+</fieldset>
+
 <button id="save" class="right" data-i18n="settings.save"></button>
 
 <script type="text/javascript">
@@ -34,6 +44,7 @@
 
         var usernameElement = document.getElementById('username');
         var passwordElement = document.getElementById('password');
+        var noTimeSlotElement = document.getElementById('no-timeslots');
         var saveElement = document.getElementById('save');
 
         Homey.get('username', function (err, username) {
@@ -46,12 +57,20 @@
             passwordElement.value = password;
         });
 
+        Homey.get('no-timeslot', function (err, noTimeslot) {
+            if (err) return Homey.alert(err);
+            noTimeSlotElement.value = noTimeslot;
+        });
+
         saveElement.addEventListener('click', function (e) {
 
             Homey.set('username', usernameElement.value, function (err) {
                 if (err) return Homey.alert(err);
             });
             Homey.set('password', passwordElement.value, function (err) {
+                if (err) return Homey.alert(err);
+            });
+            Homey.set('no-timeslot', noTimeSlotElement.value, function (err) {
                 if (err) return Homey.alert(err);
             });
 
