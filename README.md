@@ -1,3 +1,3 @@
 # nl.yiggle.jumbo
 
-Order products at the JumboApi
+Get the order status of your current order using an unofficial Jumbo API
